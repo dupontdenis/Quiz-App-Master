@@ -81,7 +81,7 @@ const startQuizz = (questions) => {
 const getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         //go to the end page
-        return window.location.assign('./game.html');
+        return window.location.assign('./index.html');
     }
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
